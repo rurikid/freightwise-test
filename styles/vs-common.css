@@ -1,0 +1,41 @@
+/* my boiler plate darkmode */
+:root {
+  --black: #161616;
+  --gray: #646464;
+  --white: #D8D8D8;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+html {
+  background-color: var(--black);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  justify-items: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
+}
