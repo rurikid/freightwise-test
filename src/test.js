@@ -73,8 +73,9 @@ class Test {
     let testButton = document.createElement('button');
   
     testButton.type = 'button';
-    testButton.innerText = 'Get the Nashville Weather';
-    testButton.onclick = () => run();
+    testButton.innerText = 'Nashville Weather';
+    testButton.className = 'btn';
+    testButton.onclick = () => this.run();
   
     context.appendChild(testButton);
   

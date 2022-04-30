@@ -1,25 +1,138 @@
-/* provided style */
+:root {
+  --freight: #1F2245;
+  --wise: #005959;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas {
+  background-color: var(--gray);
+  width: 50%;
+  height: 50%;
+  margin-top: 5vh;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.25);
+}
+
+.cards {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.title {
+  width: 90%;
+  padding: .75rem 0 .75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  justify-content: space-between;
+  text-shadow: 2px 2px 5px black;
+}
+
+.title h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-right: 2px dotted rgba(0, 0, 0, 0.25);
+  padding-left: 1rem;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.title h2 {
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-right: 1rem;
+  align-content: flex-end;
+}
+
+.card {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, .01);
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 5px black;
+  /* gap: 1rem; */
+}
+
+.details > p {
+  margin: .25rem;
+  display: flex;
+  width: 10rem;
+  justify-content: space-between;
+}
+
+.details > p > span {
+  font-weight: bold;
+}
+
+.card > i {
+  padding-bottom: 1rem;
+}
+
+.weather {
+  font-weight: bold;
+}
+
+.sun-details {
+  gap: 1rem;
+}
+
+i {
+  font-size: 4rem;  
+}
+
+.sun-details > div > i {
+  margin-bottom: 1rem;
+}
+
+.nav {
+  padding: .75rem 1rem 1rem 1rem;
+  width: 90%;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  /* justify-content: space-around; */
+}
+
 .button-container {
-  text-align: center;
+  margin: 0 1rem 0 1rem;
 }
 
-.button-container > button {
-  margin: 0;
-  padding: 10px 18px;
-  color: white;
-  background-color: #008000;
-  border: none;
+.btn {
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(16, 16, 16, .1);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  text-shadow: 2px 2px 5px black;
+  border: 1px solid black;
   border-radius: 3px;
+  padding: .5rem;
+  font-size: 1rem;
   transition: all 200ms ease-in-out;
-  font-size: 14px;
 }
 
-.button-container > button:hover {
-  background-color: #00A000;
+.btn:hover {
+  background-color: rgba(16, 16, 16, .25)
 }
 
-.button-container > button:active {
-  background-color: #006000;
+.btn:active {
+  background-color: rgba(16, 16, 16, .5)
 }
 
-/* added style */
+.btn:disabled {
+  background-color: rgba(255, 255, 255, .5);
+  color: var(--black);
+}
+
+.freight-wise {
+  color: var(--wise);
+}
+
+.freight-wise:hover {
+  color: var(--freight);
+}
