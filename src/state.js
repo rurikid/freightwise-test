@@ -1,13 +1,11 @@
 const Constants = {
-  NashvilleCoordinates: {
-    Latitude: 36.162222,
-    Longitude: -86.774444
-  }
+  Nashville: "Nashville"
 }
 
 let State = {
-  CurrentLocation: Constants.NashvilleCoordinates,
-  WeatherHistory: []
+  CurrentLocation: "Nashville",
+  WeatherHistory: [],
+  CurrentIndex: 0
 }
 
 export { State, Constants };
