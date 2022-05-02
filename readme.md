@@ -1,5 +1,9 @@
 # Software Test for FreightWise
 
+- **Right Arrow**: Travel to a random city.
+- **Left Arrow**: Revisit cities you've already visited.
+- **Go Home**: Return to Nashville.
+
 ## Library's Used
 
 ### [Axios](https://axios-http.com/docs/intro)
@@ -14,6 +18,6 @@
 
 - [CurrentWeatherData](https://openweathermap.org/current)
 
-### [Google Maps](https://developers.google.com/maps/documentation/javascript/places#places_photos)
+### [WorldPopulationReview](https://worldpopulationreview.com/)
 
-### [RandomDataApi](https://random-data-api.com/documentation)
+- [WorldCities](https://worldpopulationreview.com/world-cities)
