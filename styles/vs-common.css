@@ -61,3 +61,28 @@ footer a:hover {
 .o-slash {
   color: var(--red);
 }
+
+.popups {
+  width: 45%;
+  font-size: large;
+  position: fixed;
+  top: 1%;
+  z-index: 1;
+}
+
+.popup {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+.error {
+  background-color: #D8000064;
+}
+
+.warning {
+  background-color: #D8D80064;
+}
