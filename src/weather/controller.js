@@ -17,7 +17,7 @@ class WeatherController {
   async run() {
     console.log(new Date().toISOString(), '[Test]', 'Running the test');
 
-    axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${this.city}&limit=5&appid=${WeatherConfig.ApiKey}`)
+    axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${this.city}&limit=5&appid=${WeatherConfig.ApiKey}`)
       .then(cityResponse => {
 
         let cityData = cityResponse.data[0];
